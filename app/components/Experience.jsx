@@ -74,10 +74,10 @@ const Experience = () => {
                     ].map((experience, index) => (
                         <motion.div
                             key={index}
-                            className={`flex sm:${
+                            className={`flex ${
                                 index % 2 === 0
-                                    ? "flex-row-reverse"
-                                    : "flex-row"
+                                    ? "sm:flex-row-reverse"
+                                    : "sm:last:flex-row"
                             } items-start mb-8 flex-col sm:flex-row`}
                             variants={{
                                 hidden: { opacity: 0, y: 50 },
@@ -91,10 +91,10 @@ const Experience = () => {
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
                                 <motion.div
-                                    className={`bg-dark-gray p-6 rounded-lg text-left sm:${
+                                    className={`bg-dark-gray p-6 rounded-lg text-left ${
                                         index % 2 === 0
-                                            ? "text-left"
-                                            : "text-right"
+                                            ? "sm:text-left"
+                                            : "sm:text-right"
                                     }`}
                                     initial={{ rotateY: 90 }}
                                     whileInView={{ rotateY: 0 }}
