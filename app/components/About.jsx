@@ -60,8 +60,8 @@ const About = () => {
                         </h3>
                         <p className="mb-4">
                             With a passion for problem-solving and a love for
-                            clean, efficient code, I've spent the last 5 years
-                            honing my skills as a Full Stack Developer. My
+                            clean, efficient code, I&apos;ve spent the last 5
+                            years honing my skills as a Full Stack Developer. My
                             journey in tech began with a fascination for how
                             things work behind the scenes on the web, which led
                             me to dive deep into both front-end and back-end
@@ -96,11 +96,11 @@ const About = () => {
                             <FaHeart className="mr-2 text-cyan-300" /> Interests
                         </h3>
                         <p>
-                            When I'm not coding, you can find me exploring new
-                            hiking trails, experimenting with new recipes in the
-                            kitchen, or diving into a good sci-fi novel. I'm
-                            also passionate about mentoring aspiring developers
-                            and contributing to open-source projects.
+                            When I&apos;m not coding, you can find me exploring
+                            new hiking trails, experimenting with new recipes in
+                            the kitchen, or diving into a good sci-fi novel.
+                            I&apos;m also passionate about mentoring aspiring
+                            developers and contributing to open-source projects.
                         </p>
                     </motion.div>
                 </div>

@@ -16,7 +16,7 @@ export default function HeroSection() {
                     transition={{ duration: 0.8 }}
                 >
                     <a
-                        href="https://linkedin.com"
+                        href="https://www.linkedin.com/in/aniruddha-ghodke-363796185/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-3xl hover:text-cyan-300 transition-colors duration-300"
@@ -24,7 +24,7 @@ export default function HeroSection() {
                         <FaLinkedin aria-label="LinkedIn" />
                     </a>
                     <a
-                        href="https://github.com"
+                        href="https://github.com/AniruddhaGhodke"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-3xl hover:text-cyan-300 transition-colors duration-300"

@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 
 export default function Home() {
     return (
-        <div className="relative bg-dark-black text-dimmed-white min-h-screen selection:bg-cyan-300 selection:text-black">
+        <div className="relative bg-dark-black text-dimmed-white min-h-screen selection:bg-cyan-300 selection:text-black text-sm sm:text-base">
             {/* <div className="absolute inset-0 bg-dots opacity-10"></div> */}
             <div className="absolute inset-0 bg-grid bg-opacity-10"></div>
             <Header />
