@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+.bg-dots {
+    background-image: radial-gradient(
+        circle,
+        rgba(255, 255, 255, 0.9) 1px,
+        transparent 1px
+    );
+    background-size: 10px 10px;
+}
+
+.bg-grid {
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 150, 155, 0.1) 1px,
+            transparent 1px
+        ),
+        linear-gradient(to bottom, rgba(0, 150, 155, 0.1) 1px, transparent 1px);
+    background-size: 100px 100px; /* Adjust size of the grid */
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

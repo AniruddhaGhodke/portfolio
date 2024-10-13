@@ -1,0 +1,81 @@
+.skill-icon {
+    transition: color 0.3s ease;
+}
+
+.skill-icon:hover .SiJavascript {
+    color: #f7df1e !important;
+}
+
+.skill-icon:hover .SiReact {
+    color: #61dafb !important;
+}
+
+.skill-icon:hover .SiNodedotjs {
+    color: #339933 !important;
+}
+
+.skill-icon:hover .SiPython {
+    color: #3776ab !important;
+}
+
+.skill-icon:hover .SiMongodb {
+    color: #47a248 !important;
+}
+
+.skill-icon:hover .SiHtml5 {
+    color: #e34f26 !important;
+}
+
+.skill-icon:hover .SiCss3 {
+    color: #1572b6 !important;
+}
+
+.skill-icon:hover .SiTypescript {
+    color: #3178c6 !important;
+}
+
+.skill-icon:hover .SiGit {
+    color: #f05032 !important;
+}
+
+.skill-carousel-container {
+    width: 100%;
+}
+
+.skill-carousel-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.skill-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% / 3));
+    }
+}
+
+.skill-icon {
+    margin-right: 1rem;
+    white-space: nowrap;
+}
+
+/* Pause animation on hover */
+.skill-carousel-container:hover .skill-track {
+    animation-play-state: paused;
+}
+
+/* Your existing icon-specific styles */
+.skill-icon {
+    transition: color 0.3s ease;
+}
+
+.skill-icon:hover {
+    color: inherit !important;
+}
