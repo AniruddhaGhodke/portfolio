@@ -8,7 +8,7 @@ const Experience = () => {
     };
 
     return (
-        <div className="min-h-screen text-dimmed-white py-40">
+        <div className="text-dimmed-white py-10">
             <div className="container mx-auto px-4">
                 <motion.h2
                     className="text-4xl font-bold mb-12 text-center relative"
@@ -34,7 +34,7 @@ const Experience = () => {
                     }}
                 >
                     <motion.div
-                        className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-500"
+                        className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-cyan-500 hidden sm:block"
                         initial={{ scaleY: 0 }}
                         whileInView={{ scaleY: 1 }}
                         viewport={{ once: true }}
@@ -74,11 +74,11 @@ const Experience = () => {
                     ].map((experience, index) => (
                         <motion.div
                             key={index}
-                            className={`flex ${
+                            className={`flex sm:${
                                 index % 2 === 0
                                     ? "flex-row-reverse"
                                     : "flex-row"
-                            } items-start mb-8`}
+                            } items-start mb-8 flex-col sm:flex-row`}
                             variants={{
                                 hidden: { opacity: 0, y: 50 },
                                 visible: { opacity: 1, y: 0 },
@@ -86,12 +86,12 @@ const Experience = () => {
                             transition={{ duration: 0.6 }}
                         >
                             <motion.div
-                                className="w-1/2 px-4"
+                                className="w-full sm:w-1/2 px-4"
                                 whileHover={{ scale: 1.05 }}
                                 transition={{ type: "spring", stiffness: 300 }}
                             >
                                 <motion.div
-                                    className={`bg-dark-gray p-6 rounded-lg  ${
+                                    className={`bg-dark-gray p-6 rounded-lg text-left sm:${
                                         index % 2 === 0
                                             ? "text-left"
                                             : "text-right"
@@ -128,7 +128,7 @@ const Experience = () => {
                                 </motion.div>
                             </motion.div>
                             <motion.div
-                                className="w-4 h-4 mt-[30px] bg-cyan-500 rounded-full absolute left-1/2 transform -translate-x-1/2"
+                                className="w-4 h-4 mt-[30px] bg-cyan-500 rounded-full absolute left-1/2 transform -translate-x-1/2 hidden sm:block"
                                 initial={{ scale: 0 }}
                                 whileInView={{ scale: 1 }}
                                 viewport={{ once: true }}

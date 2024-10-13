@@ -9,7 +9,7 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-0 left-0 right-0 p-4 z-10 bg-gray-900">
+        <header className="static top-0 left-0 right-0 p-4 z-10 bg-gray-900">
             <div className="container mx-auto flex justify-between items-center">
                 <Link
                     to="hero"

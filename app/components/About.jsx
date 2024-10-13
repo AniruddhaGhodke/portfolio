@@ -34,7 +34,7 @@ const About = () => {
     };
 
     return (
-        <div className="min-h-screen text-dimmed-white py-40">
+        <div className="text-dimmed-white py-10">
             <div className="container mx-auto px-4">
                 <motion.h2
                     className="text-4xl font-bold mb-12 text-center"

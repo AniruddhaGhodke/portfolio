@@ -20,7 +20,7 @@ const TypingEffect = ({ fullText }) => {
     }, [text, isTyping]);
 
     return (
-        <h1 className="relative text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-neon-blue to-neon-pink shadow-lg">
+        <h1 className="relative text-center text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-neon-blue to-neon-pink shadow-lg">
             {text}
             <motion.span
                 className="inline-block w-0.5 h-8 bg-white ml-1"

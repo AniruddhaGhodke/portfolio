@@ -10,7 +10,7 @@ export default function HeroSection() {
             <div className="container mx-auto">
                 {/* Left-aligned links */}
                 <motion.div
-                    className="fixed left-4 top-1/2 transform -translate-y-1/2 flex flex-col space-y-4"
+                    className=" hidden sm:flex fixed left-4 top-1/2 -translate-y-1/2 flex-col space-y-4"
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: 1, x: 20 }}
                     transition={{ duration: 0.8 }}
@@ -42,7 +42,7 @@ export default function HeroSection() {
                 </motion.div>
 
                 {/* Main content */}
-                <div className="flex flex-col items-center max-w-3xl mx-auto py-32 sm:py-44">
+                <div className="flex flex-col items-center max-w-3xl mx-auto pt-6 sm:pt-32 sm:py-44">
                     <motion.div
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
