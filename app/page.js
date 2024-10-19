@@ -1,5 +1,6 @@
 import About from "./components/About";
 import Experience from "./components/Experience";
+import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
 import NavigationIndicator from "./components/NavigationIndicator";
@@ -23,6 +24,9 @@ export default function Home() {
             </section>
             <section id="projects">
                 <Projects />
+            </section>
+            <section id="footer">
+                <Footer />
             </section>
         </div>
     );

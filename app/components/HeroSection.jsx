@@ -50,7 +50,7 @@ export default function HeroSection() {
                         className="mb-5"
                     >
                         <Image
-                            src="/profileImg.png"
+                            src="/profile.jpg"
                             alt="Aniruddha Ghodke"
                             width={180}
                             height={180}
