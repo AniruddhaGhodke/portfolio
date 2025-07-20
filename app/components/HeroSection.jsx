@@ -172,7 +172,7 @@ export default function HeroSection() {
                 className="text-2xl md:text-4xl font-bold text-dimmed-white relative inline-block"
                 whileHover={{ scale: 1.05 }}
               >
-                <span className="relative z-10">Experience Engineer L2</span>
+                <span className="relative z-10">Frontend Developer (ReactJS)</span>
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-lg -z-10"
                   initial={{ width: 0 }}
@@ -186,7 +186,7 @@ export default function HeroSection() {
             <motion.div variants={itemVariants} className="mb-8">
               <div className="flex flex-wrap justify-center gap-4 mb-6">
                 {[
-                  { icon: FaCode, text: "5+ Years", subtext: "Experience" },
+                  { icon: FaCode, text: "6+ Years", subtext: "Experience" },
                   { icon: FaRocket, text: "20+ Projects", subtext: "Delivered" },
                   { icon: FaLightbulb, text: "100%", subtext: "Client Satisfaction" }
                 ].map((stat, index) => (
@@ -206,11 +206,11 @@ export default function HeroSection() {
               </div>
               
               <p className="text-lg md:text-xl max-w-3xl mx-auto text-gray-300 leading-relaxed">
-                Passionate full-stack developer crafting{" "}
-                <span className="text-cyan-400 font-semibold">scalable web applications</span> with{" "}
-                <span className="text-purple-400 font-semibold">modern technologies</span>. 
-                Specialized in React, Node.js, and cloud solutions that drive{" "}
-                <span className="text-green-400 font-semibold">business growth</span>.
+                Frontend Developer specializing in{" "}
+                <span className="text-cyan-400 font-semibold">ReactJS development</span> with{" "}
+                <span className="text-purple-400 font-semibold">6+ years of experience</span>. 
+                Expert in problem-solving, test-driven development, and{" "}
+                <span className="text-green-400 font-semibold">user-friendly web applications</span>.
               </p>
             </motion.div>
 
@@ -301,7 +301,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 3.2, duration: 0.5 }}
             >
-              name: "Aniruddha",
+              name: &quot;Aniruddha&quot;,
             </motion.div>
             <motion.div
               className="text-green-400 ml-4"
@@ -309,7 +309,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 3.4, duration: 0.5 }}
             >
-              role: "Full Stack",
+              role: &quot;Full Stack&quot;,
             </motion.div>
             <motion.div
               className="text-yellow-400 ml-4"
@@ -317,7 +317,7 @@ export default function HeroSection() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 3.6, duration: 0.5 }}
             >
-              passion: "Innovation"
+              passion: &quot;Innovation&quot;
             </motion.div>
             <motion.div
               className="text-purple-400"

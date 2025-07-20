@@ -17,7 +17,7 @@ const TypingEffect = ({ fullText }) => {
                 setIsTyping(false);
             }
         }
-    }, [text, isTyping]);
+    }, [text, isTyping, fullText]);
 
     return (
         <h1 className="relative text-center text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-br from-neon-blue to-neon-pink shadow-lg">

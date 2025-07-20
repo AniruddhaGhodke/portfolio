@@ -11,6 +11,9 @@ import {
   SiCss3,
   SiTypescript,
   SiGit,
+  SiSass,
+  SiJquery,
+  SiSalesforce,
 } from "react-icons/si";
 import "./IconsStyles.css";
 import SkillCarousel from "./InfiniteSkillsCarousel";
@@ -19,11 +22,13 @@ const skills = [
   { name: "JavaScript", icon: SiJavascript, iconClass: "SiJavascript" },
   { name: "React", icon: SiReact, iconClass: "SiReact" },
   { name: "Node.js", icon: SiNodedotjs, iconClass: "SiNodedotjs" },
+  { name: "HTML5", icon: SiHtml5, iconClass: "SiHtml5" },
+  { name: "CSS3/Sass", icon: SiSass, iconClass: "SiSass" },
+  { name: "TypeScript", icon: SiTypescript, iconClass: "SiTypescript" },
+  { name: "jQuery", icon: SiJquery, iconClass: "SiJquery" },
   { name: "Python", icon: SiPython, iconClass: "SiPython" },
   { name: "MongoDB", icon: SiMongodb, iconClass: "SiMongodb" },
-  { name: "HTML5", icon: SiHtml5, iconClass: "SiHtml5" },
-  { name: "CSS3", icon: SiCss3, iconClass: "SiCss3" },
-  { name: "TypeScript", icon: SiTypescript, iconClass: "SiTypescript" },
+  { name: "Salesforce", icon: SiSalesforce, iconClass: "SiSalesforce" },
   { name: "Git", icon: SiGit, iconClass: "SiGit" },
 ];
 
@@ -59,17 +64,16 @@ const About = () => {
               <FaCode className="mr-2 text-cyan-300" /> My Journey
             </h3>
             <p className="mb-4">
-              With a passion for problem-solving and a love for clean, efficient
-              code, I&apos;ve spent the last 5 years honing my skills as a Full
-              Stack Developer. My journey in tech began with a fascination for
-              how things work behind the scenes on the web, which led me to dive
-              deep into both front-end and back-end technologies.
+              With a passion for problem-solving and expertise in test-driven development,
+              I&apos;ve spent over 6 years specializing as a Frontend Developer with ReactJS.
+              My journey focuses on creating high-performance, user-friendly web applications
+              that improve user engagement and deliver exceptional user experiences.
             </p>
             <p>
-              I thrive on challenges and continuously seek to expand my
-              knowledge and skills in the ever-evolving world of web
-              development. My goal is to create intuitive, user-friendly
-              applications that not only meet but exceed client expectations.
+              I excel in debugging complex issues, optimizing performance, and ensuring
+              accessibility for all users. With extensive experience in Agile methodologies
+              and collaboration with designers, I focus on UI/UX best practices to create
+              applications that exceed client expectations.
             </p>
           </motion.div>
 
@@ -83,20 +87,40 @@ const About = () => {
             <h3 className="mb-4 flex items-center text-2xl font-semibold">
               <FaGraduationCap className="mr-2 text-cyan-300" /> Education
             </h3>
-            <p className="mb-4">
-              Bachelor of Science in Computer Science
-              <br />
-              University of Technology, Graduated 2018
-            </p>
+            <div className="mb-4 bg-gray-900/50 rounded-lg p-4 border border-gray-700">
+              <p className="text-gray-300">
+                <span className="font-semibold text-cyan-300">B.E. Computer Science</span> • 
+                <span className="text-gray-400"> Sinhgad Kashibai Navle College</span> • 
+                <span className="text-gray-400"> 2014-2018</span>
+              </p>
+            </div>
             <h3 className="mb-4 flex items-center text-2xl font-semibold">
-              <FaHeart className="mr-2 text-cyan-300" /> Interests
+              <FaHeart className="mr-2 text-cyan-300" /> Philosophy & Interests
             </h3>
-            <p>
-              When I&apos;m not coding, you can find me exploring new hiking
-              trails, experimenting with new recipes in the kitchen, or diving
-              into a good sci-fi novel. I&apos;m also passionate about mentoring
-              aspiring developers and contributing to open-source projects.
-            </p>
+            <div className="space-y-4">
+              <div>
+                <h4 className="font-semibold text-cyan-300 mb-2">Development Philosophy:</h4>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  I believe in writing clean, maintainable code that tells a story. Every component should have a purpose, 
+                  every function should be testable, and every user interaction should feel natural and accessible.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-cyan-300 mb-2">What Excites Me:</h4>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  The intersection of technology and user experience fascinates me. I love transforming complex problems 
+                  into elegant solutions that users don&apos;t even notice - because they just work perfectly.
+                </p>
+              </div>
+              <div>
+                <h4 className="font-semibold text-cyan-300 mb-2">Beyond Code:</h4>
+                <p className="text-sm text-gray-300 leading-relaxed">
+                  When I&apos;m not developing, I enjoy exploring new technologies, contributing to open-source projects, 
+                  and mentoring fellow developers. I also find inspiration in design, photography, and understanding 
+                  how great products are built.
+                </p>
+              </div>
+            </div>
           </motion.div>
         </div>
 

@@ -44,31 +44,34 @@ const Experience = () => {
             {
               title: "Experience Engineer L2",
               company: "Publicis Sapient",
-              period: "2021 - Present",
+              period: "August 2021 - Present",
               location: "Pune, India",
               technologies: [
-                "React",
-                "Next.js",
-                "Node.js",
-                "TypeScript",
-                "GraphQL",
-                "MongoDB",
-                "AWS",
+                "ReactJS",
+                "NextJS",
+                "JavaScript (ES6+)",
+                "HTML5",
+                "CSS3/Sass",
+                "jQuery",
+                "NodeJS",
+                "RESTful APIs",
               ],
               achievements: [
-                "Led development of 5+ E-commerce solutions for global brands (Shiseido, Nars Cosmetics) serving 100K+ daily users",
-                "Improved application performance by 40% through microservices architecture implementation",
-                "Mentored 3 junior developers and conducted 50+ code reviews, reducing bug rate by 30%",
-                "Implemented accessibility features achieving WCAG 2.1 AA compliance across all projects",
-                "Reduced page load time by 25% through performance optimization and best practices",
+                "Engineered modular React components using Hooks (useState, useEffect, useContext, useMemo, useReducer) for enhanced testability and reusability",
+                "Developed custom hooks for form handling, API integration, and error management, reducing code duplication by 40%",
+                "Implemented Context API for global authentication and role-based access control, improving code scalability",
+                "Optimized performance via lazy loading, code splitting, and memoization, boosting UI responsiveness by 30%",
+                "Mentored 5 junior developers in React best practices, code quality standards, and Git workflows",
+                "Integrated RESTful APIs with secure token authentication for reliable client-server data exchange",
               ],
-              teamSize: "8-12 developers",
-              impact: "Delivered solutions generating $2M+ in client revenue",
+              teamSize: "5-8 developers",
+              impact:
+                "Designed 3+ high-performance web applications leading to 15% improvement in user engagement",
             },
             {
               title: "Full Stack Developer",
               company: "Climate Connect",
-              period: "2019 - 2021",
+              period: "October 2019 - August 2021",
               location: "Remote",
               technologies: [
                 "Python",
@@ -79,37 +82,38 @@ const Experience = () => {
                 "Docker",
               ],
               achievements: [
-                "Built multi-user wind turbine audit platform serving 200+ technicians across India",
-                "Developed Python automation scripts reducing manual data processing time by 80%",
-                "Integrated ML models for predictive maintenance, improving turbine lifespan by 15%",
-                "Achieved 99.5% uptime through robust backend architecture and monitoring",
-                "Designed responsive UI supporting mobile devices used in field conditions",
+                "Developed a multi-user web app for wind turbine audits to analyze health and optimize performance and lifespan of turbines",
+                "Created Python scripts to automate web scraping and integrate data into database for machine learning model execution",
+                "Built responsive UI supporting field technicians on mobile devices",
+                "Implemented robust backend architecture ensuring high system reliability",
+                "Integrated machine learning models for predictive maintenance and performance optimization",
               ],
-              teamSize: "5 developers",
+              teamSize: "3-5 developers",
               impact:
-                "Platform analyzed 1000+ turbines saving $500K annually in maintenance costs",
+                "Platform optimized turbine performance and reduced maintenance costs through predictive analytics",
             },
             {
               title: "Full Stack Developer",
               company: "Freelancer",
-              period: "2018 - 2019",
+              period: "August 2018 - August 2019",
               location: "Remote",
               technologies: [
-                "Next.js",
+                "NextJS",
                 "MongoDB",
-                "Node.js",
-                "Tailwind CSS",
-                "SEO",
+                "NodeJS",
+                "Custom Server Setup",
+                "SEO Optimization",
+                "Animations",
               ],
               achievements: [
-                "Delivered custom web platform for manufacturing client with 99.9% uptime",
-                "Improved SEO rankings by 60% through technical optimization and best practices",
-                "Implemented advanced animations and UX improvements increasing user engagement by 45%",
-                "Set up custom server infrastructure reducing hosting costs by 30%",
+                "Developed a website for a private company with NextJS and MongoDB with custom server setup",
+                "Implemented animations and SEO best practices for better User Experience",
+                "Delivered high-performance web solution with optimized loading times",
+                "Configured custom server infrastructure for reliable hosting",
               ],
               teamSize: "Solo developer",
               impact:
-                "Client saw 40% increase in online inquiries within 6 months",
+                "Delivered complete web solution with enhanced user experience and performance",
             },
           ].map((experience, index) => (
             <motion.div
@@ -123,13 +127,9 @@ const Experience = () => {
               }}
               transition={{ duration: 0.6 }}
             >
-              <motion.div
-                className="w-full px-4 sm:w-1/2"
-                whileHover={{ scale: 1.05 }}
-                transition={{ type: "spring", stiffness: 300 }}
-              >
+              <motion.div className="w-full px-4 sm:w-1/2">
                 <motion.div
-                  className={`rounded-lg border border-gray-700 bg-gray-800 p-6 text-left shadow-lg transition-colors duration-300 hover:border-cyan-300`}
+                  className={`rounded-lg border border-gray-700 bg-gray-800 p-6 text-left shadow-lg transition-all duration-300 hover:border-cyan-300 hover:bg-gray-900 hover:shadow-xl hover:shadow-cyan-300/20`}
                   initial={{ rotateY: 90 }}
                   whileInView={{ rotateY: 0 }}
                   viewport={{ once: true }}

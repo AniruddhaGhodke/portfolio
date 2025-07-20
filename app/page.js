@@ -6,7 +6,6 @@ import HeroSection from "./components/HeroSection";
 import NavigationIndicator from "./components/NavigationIndicator";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import CertificationsEducation from "./components/CertificationsEducation";
 
 export default function Home() {
     return (
@@ -26,9 +25,6 @@ export default function Home() {
             </section>
             <section id="projects">
                 <Projects />
-            </section>
-            <section id="education">
-                <CertificationsEducation />
             </section>
             <section id="contact">
                 <Contact />
